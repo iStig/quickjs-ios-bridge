@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "PointJSContainer.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    PointJSContainer *jscontainer = [PointJSContainer new];
+//    [jscontainer eval:@"console.log(WOSAI.system.env)"];
+    [jscontainer eval:@"let result = WOSAI.system.env(); console.log(JSON.stringify(result))"];
+    
+    [jscontainer eval:@"let result = WOSAI.system.env(); console.log(JSON.stringify(result))"];
+    
+    
+    
+    
+//    {
+//        Class class = NSClassFromString(@"QuickJS_Test.PointJSModuleSystem");
+//        NSLog(@"%@",class);
+//    }
+//
+//    {
+//        Class class = NSClassFromString(@"PointJSResponse");
+//        NSLog(@"%@",class);
+//    }
 }
 
 
