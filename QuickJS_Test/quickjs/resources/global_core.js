@@ -13,15 +13,25 @@ globalThis._bizCallbacks = {};
  * @param {int} callbackId
  * @returns {object}
  */
-globalThis._genCallArgv = (module, method, params = null, sync = false, callbackId = null) => {
-    console.log(sync + module + method + params + callbackId);
-  return {
+globalThis._genCallArgv = (module, method, params = null, sync = false, callback) => {
+    let callback_id = 0;
+//    console.log('>>>11111');
+
+    if(callback !== undefined){
+//        console.log('>>>2222');
+
+//        console.log(callback);
+        callback_id = globalThis._persistCallback(callback);
+//        console.log('>>>33333');
+
+    }
+    return {
     type: sync ? 1 : 0,
     module: module,
     method: method,
     params: params,
-    callbackId: callbackId,
-  };
+    callbackId: callback_id,
+    };
 };
 
 /**
@@ -30,8 +40,12 @@ globalThis._genCallArgv = (module, method, params = null, sync = false, callback
  * @returns {int}
  */
 globalThis._persistCallback = (callback) => {
+//    console.log('49500');
+
   let callback_id = Date.now();
+//  console.log(callback_id);
   globalThis._bizCallbacks[callback_id] = callback;
+//  console.log(globalThis._bizCallbacks);
   return callback_id;
 };
 
@@ -42,12 +56,20 @@ globalThis._persistCallback = (callback) => {
  * @returns
  */
 globalThis._nativeCallback = (callback_id, params) => {
+    console.log('8888'+callback_id);
+    console.log('**'+params);
+
   let callback = globalThis._bizCallbacks[callback_id];
+//    console.log('7777'+callback);
+//    console.log('1111'+params);
   if (callback === undefined && typeof callback !== "function") {
     return;
   }
-  let obj = JSON.parse(params);
-  callback(obj);
+  console.log('1111**'+JSON.stringify(params));
+//  let obj = JSON.parse(params);
+//  console.log('4424455**'+obj);
+
+  callback(params);
 };
 
 globalThis.WOSAI = {
