@@ -35,7 +35,8 @@ class PointJSCharacterPositionAsync: NSObject, PointJSCharacterAsync {
         
         let delayTime = DispatchTime.now() + DispatchTimeInterval.seconds(3)
         DispatchQueue.global().asyncAfter(deadline: delayTime) {
-//            print(dict,argv,context);
+            print(dict,argv,context);
+//            print("aaa");
             DispatchQueue.main.sync {//主线程
                 cb(.ok(dict as NSObject));
             }
