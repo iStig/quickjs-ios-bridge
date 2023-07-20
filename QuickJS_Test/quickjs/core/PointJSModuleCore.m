@@ -48,6 +48,7 @@
 - (void)callbackQuickJSWithResponse:(PointJSResponse *)resp forCallbackId:(NSInteger)cbid {
     NSString *respjson = resp.modelToJSONString;
     NSString *jsstr = [NSString stringWithFormat:@"_nativeCallback(%ld, %@)", cbid, respjson];
+    NSLog(@"%@",jsstr);
     [self.context eval:jsstr];
 }
 

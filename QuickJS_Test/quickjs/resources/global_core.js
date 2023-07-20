@@ -56,8 +56,10 @@ globalThis._persistCallback = (callback) => {
  * @returns
  */
 globalThis._nativeCallback = (callback_id, params) => {
-    console.log('8888'+callback_id);
-    console.log('**'+params);
+    console.log('8888');
+
+//    console.log('8888'+callback_id);
+//    console.log('**'+params);
 
   let callback = globalThis._bizCallbacks[callback_id];
 //    console.log('7777'+callback);
