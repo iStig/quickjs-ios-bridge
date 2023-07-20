@@ -1,6 +1,6 @@
 //
-//  PointJSInject.h
-//  Point
+//  SQBJSInject.h
+//  SQB
 //
 //  Created by matrixme on 2023/7/17.
 //
@@ -9,16 +9,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSUInteger, PointJSInjectType) {
-    PointJSInjectTypeModule,
-    PointJSInjectTypeGlobal,
+typedef NS_ENUM(NSUInteger, SQBJSInjectType) {
+    SQBJSInjectTypeModule,
+    SQBJSInjectTypeGlobal,
 };
 
-@interface PointJSInject : NSObject
+@interface SQBJSInject : NSObject
 
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *file;
-@property (nonatomic, assign) PointJSInjectType type;
+@property (nonatomic, assign) SQBJSInjectType type;
 @property (nonatomic, copy) NSString *class;
 
 @end

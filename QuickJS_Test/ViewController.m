@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-#import "PointJSContainer.h"
+#import "SQBJSContainer.h"
 
 @interface ViewController ()
 
@@ -18,23 +18,24 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    PointJSContainer *jscontainer = [PointJSContainer new];
+    SQBJSContainer *jscontainer = [SQBJSContainer new];
 //    [jscontainer eval:@"console.log(WOSAI.system.env)"];
-    [jscontainer eval:@"let result = WOSAI.system.env(console.log('******')); console.log('>>>>'+JSON.stringify(result))"];
+    //同步
+    [jscontainer eval:@"let result = WOSAI.system.env(console.log('******')); console.log('<<<'+JSON.stringify(result))"];
+    //异步
+    [jscontainer eval:@"WOSAI.location.position((param) => {console.log('>>>><<<<'+JSON.stringify(param));});"];
     
-//    [jscontainer eval:@"WOSAI.location.position((param) => {console.log(param)});"];
-    
-    [jscontainer eval:@"WOSAI.location.position(function(param){console.log('>>>>'+JSON.stringify(param));});"];//console.log(param);
+//    [jscontainer eval:@"WOSAI.location.position(function(param){console.log('>>>>'+JSON.stringify(param));});"];
 
     
 
 //    {
-//        Class class = NSClassFromString(@"QuickJS_Test.PointJSModuleSystem");
+//        Class class = NSClassFromString(@"QuickJS_Test.SQBJSModuleSystem");
 //        NSLog(@"%@",class);
 //    }
 //
 //    {
-//        Class class = NSClassFromString(@"PointJSResponse");
+//        Class class = NSClassFromString(@"SQBJSResponse");
 //        NSLog(@"%@",class);
 //    }
 }

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		453D05C22A68CA0500D76296 /* PointJSModuleLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453D05C12A68CA0500D76296 /* PointJSModuleLocation.swift */; };
-		453D05C42A68CA6100D76296 /* PointJSCharacterPositionAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453D05C32A68CA6100D76296 /* PointJSCharacterPositionAsync.swift */; };
+		453D05C22A68CA0500D76296 /* SQBJSModuleLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453D05C12A68CA0500D76296 /* SQBJSModuleLocation.swift */; };
+		453D05C42A68CA6100D76296 /* SQBJSCharacterPositionAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453D05C32A68CA6100D76296 /* SQBJSCharacterPositionAsync.swift */; };
 		4566EED82A669ED300F8F595 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566EED72A669ED300F8F595 /* AppDelegate.m */; };
 		4566EEDB2A669ED300F8F595 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566EEDA2A669ED300F8F595 /* SceneDelegate.m */; };
 		4566EEDE2A669ED300F8F595 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566EEDD2A669ED300F8F595 /* ViewController.m */; };
@@ -16,25 +16,25 @@
 		4566EEE32A669ED600F8F595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4566EEE22A669ED600F8F595 /* Assets.xcassets */; };
 		4566EEE62A669ED600F8F595 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4566EEE42A669ED600F8F595 /* LaunchScreen.storyboard */; };
 		4566EEE92A669ED600F8F595 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566EEE82A669ED600F8F595 /* main.m */; };
-		4566EF092A669FAA00F8F595 /* PointJSContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566EEF12A669FAA00F8F595 /* PointJSContainer.m */; };
-		4566EF0A2A669FAA00F8F595 /* PointJSContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566EEF32A669FAA00F8F595 /* PointJSContainer.swift */; };
-		4566EF0B2A669FAA00F8F595 /* PointJSModuleCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566EEF62A669FAA00F8F595 /* PointJSModuleCore.m */; };
-		4566EF0C2A669FAA00F8F595 /* PointJSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566EEF72A669FAA00F8F595 /* PointJSManager.m */; };
+		4566EF092A669FAA00F8F595 /* SQBJSContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566EEF12A669FAA00F8F595 /* SQBJSContainer.m */; };
+		4566EF0A2A669FAA00F8F595 /* SQBJSContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566EEF32A669FAA00F8F595 /* SQBJSContainer.swift */; };
+		4566EF0B2A669FAA00F8F595 /* SQBJSModuleCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566EEF62A669FAA00F8F595 /* SQBJSModuleCore.m */; };
+		4566EF0C2A669FAA00F8F595 /* SQBJSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566EEF72A669FAA00F8F595 /* SQBJSManager.m */; };
 		4566EF0D2A669FAA00F8F595 /* injection.json in Resources */ = {isa = PBXBuildFile; fileRef = 4566EEFA2A669FAA00F8F595 /* injection.json */; };
 		4566EF0E2A669FAA00F8F595 /* global_core.js in Resources */ = {isa = PBXBuildFile; fileRef = 4566EEFB2A669FAA00F8F595 /* global_core.js */; };
-		4566EF0F2A669FAA00F8F595 /* PointJSCallArgv.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566EEFD2A669FAA00F8F595 /* PointJSCallArgv.m */; };
-		4566EF102A669FAA00F8F595 /* PointJSInject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566EEFF2A669FAA00F8F595 /* PointJSInject.m */; };
-		4566EF112A669FAA00F8F595 /* PointJSResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566EF012A669FAA00F8F595 /* PointJSResponse.m */; };
+		4566EF0F2A669FAA00F8F595 /* SQBJSCallArgv.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566EEFD2A669FAA00F8F595 /* SQBJSCallArgv.m */; };
+		4566EF102A669FAA00F8F595 /* SQBJSInject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566EEFF2A669FAA00F8F595 /* SQBJSInject.m */; };
+		4566EF112A669FAA00F8F595 /* SQBJSResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566EF012A669FAA00F8F595 /* SQBJSResponse.m */; };
 		4566EF122A669FAA00F8F595 /* module_system.js in Resources */ = {isa = PBXBuildFile; fileRef = 4566EF052A669FAA00F8F595 /* module_system.js */; };
-		4566EF132A669FAA00F8F595 /* PointJSCharacterEnvSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566EF072A669FAA00F8F595 /* PointJSCharacterEnvSync.swift */; };
-		4566EF142A669FAA00F8F595 /* PointJSModuleSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566EF082A669FAA00F8F595 /* PointJSModuleSystem.swift */; };
+		4566EF132A669FAA00F8F595 /* SQBJSCharacterEnvSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566EF072A669FAA00F8F595 /* SQBJSCharacterEnvSync.swift */; };
+		4566EF142A669FAA00F8F595 /* SQBJSModuleSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4566EF082A669FAA00F8F595 /* SQBJSModuleSystem.swift */; };
 		A65D68D8C12BAEBB644752E2 /* Pods_QuickJS_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 961C61921E0FA813D2ED9F0D /* Pods_QuickJS_Test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1EC718364251BB9ADAEA5D59 /* Pods-QuickJS_Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickJS_Test.debug.xcconfig"; path = "Target Support Files/Pods-QuickJS_Test/Pods-QuickJS_Test.debug.xcconfig"; sourceTree = "<group>"; };
-		453D05C12A68CA0500D76296 /* PointJSModuleLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointJSModuleLocation.swift; sourceTree = "<group>"; };
-		453D05C32A68CA6100D76296 /* PointJSCharacterPositionAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointJSCharacterPositionAsync.swift; sourceTree = "<group>"; };
+		453D05C12A68CA0500D76296 /* SQBJSModuleLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQBJSModuleLocation.swift; sourceTree = "<group>"; };
+		453D05C32A68CA6100D76296 /* SQBJSCharacterPositionAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQBJSCharacterPositionAsync.swift; sourceTree = "<group>"; };
 		4566EED32A669ED300F8F595 /* QuickJS_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickJS_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4566EED62A669ED300F8F595 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4566EED72A669ED300F8F595 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -47,25 +47,25 @@
 		4566EEE52A669ED600F8F595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4566EEE72A669ED600F8F595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4566EEE82A669ED600F8F595 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4566EEF12A669FAA00F8F595 /* PointJSContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointJSContainer.m; sourceTree = "<group>"; };
-		4566EEF22A669FAA00F8F595 /* PointJSModuleCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointJSModuleCore.h; sourceTree = "<group>"; };
-		4566EEF32A669FAA00F8F595 /* PointJSContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointJSContainer.swift; sourceTree = "<group>"; };
-		4566EEF42A669FAA00F8F595 /* PointJSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointJSManager.h; sourceTree = "<group>"; };
-		4566EEF52A669FAA00F8F595 /* PointJSContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointJSContainer.h; sourceTree = "<group>"; };
-		4566EEF62A669FAA00F8F595 /* PointJSModuleCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointJSModuleCore.m; sourceTree = "<group>"; };
-		4566EEF72A669FAA00F8F595 /* PointJSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointJSManager.m; sourceTree = "<group>"; };
-		4566EEF82A669FAA00F8F595 /* PointJSProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointJSProtocols.h; sourceTree = "<group>"; };
+		4566EEF12A669FAA00F8F595 /* SQBJSContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQBJSContainer.m; sourceTree = "<group>"; };
+		4566EEF22A669FAA00F8F595 /* SQBJSModuleCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQBJSModuleCore.h; sourceTree = "<group>"; };
+		4566EEF32A669FAA00F8F595 /* SQBJSContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQBJSContainer.swift; sourceTree = "<group>"; };
+		4566EEF42A669FAA00F8F595 /* SQBJSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQBJSManager.h; sourceTree = "<group>"; };
+		4566EEF52A669FAA00F8F595 /* SQBJSContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQBJSContainer.h; sourceTree = "<group>"; };
+		4566EEF62A669FAA00F8F595 /* SQBJSModuleCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQBJSModuleCore.m; sourceTree = "<group>"; };
+		4566EEF72A669FAA00F8F595 /* SQBJSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQBJSManager.m; sourceTree = "<group>"; };
+		4566EEF82A669FAA00F8F595 /* SQBJSProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQBJSProtocols.h; sourceTree = "<group>"; };
 		4566EEFA2A669FAA00F8F595 /* injection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = injection.json; sourceTree = "<group>"; };
 		4566EEFB2A669FAA00F8F595 /* global_core.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = global_core.js; sourceTree = "<group>"; };
-		4566EEFD2A669FAA00F8F595 /* PointJSCallArgv.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointJSCallArgv.m; sourceTree = "<group>"; };
-		4566EEFE2A669FAA00F8F595 /* PointJSResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointJSResponse.h; sourceTree = "<group>"; };
-		4566EEFF2A669FAA00F8F595 /* PointJSInject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointJSInject.m; sourceTree = "<group>"; };
-		4566EF002A669FAA00F8F595 /* PointJSCallArgv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointJSCallArgv.h; sourceTree = "<group>"; };
-		4566EF012A669FAA00F8F595 /* PointJSResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointJSResponse.m; sourceTree = "<group>"; };
-		4566EF022A669FAA00F8F595 /* PointJSInject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointJSInject.h; sourceTree = "<group>"; };
+		4566EEFD2A669FAA00F8F595 /* SQBJSCallArgv.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQBJSCallArgv.m; sourceTree = "<group>"; };
+		4566EEFE2A669FAA00F8F595 /* SQBJSResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQBJSResponse.h; sourceTree = "<group>"; };
+		4566EEFF2A669FAA00F8F595 /* SQBJSInject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQBJSInject.m; sourceTree = "<group>"; };
+		4566EF002A669FAA00F8F595 /* SQBJSCallArgv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQBJSCallArgv.h; sourceTree = "<group>"; };
+		4566EF012A669FAA00F8F595 /* SQBJSResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQBJSResponse.m; sourceTree = "<group>"; };
+		4566EF022A669FAA00F8F595 /* SQBJSInject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQBJSInject.h; sourceTree = "<group>"; };
 		4566EF052A669FAA00F8F595 /* module_system.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = module_system.js; sourceTree = "<group>"; };
-		4566EF072A669FAA00F8F595 /* PointJSCharacterEnvSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointJSCharacterEnvSync.swift; sourceTree = "<group>"; };
-		4566EF082A669FAA00F8F595 /* PointJSModuleSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointJSModuleSystem.swift; sourceTree = "<group>"; };
+		4566EF072A669FAA00F8F595 /* SQBJSCharacterEnvSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQBJSCharacterEnvSync.swift; sourceTree = "<group>"; };
+		4566EF082A669FAA00F8F595 /* SQBJSModuleSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQBJSModuleSystem.swift; sourceTree = "<group>"; };
 		4566EF162A6778BD00F8F595 /* QuickJS_Test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuickJS_Test-Bridging-Header.h"; sourceTree = "<group>"; };
 		961C61921E0FA813D2ED9F0D /* Pods_QuickJS_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickJS_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A29EE2FD470A511CF77761EC /* Pods-QuickJS_Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickJS_Test.release.xcconfig"; path = "Target Support Files/Pods-QuickJS_Test/Pods-QuickJS_Test.release.xcconfig"; sourceTree = "<group>"; };
@@ -143,14 +143,14 @@
 		4566EEF02A669FAA00F8F595 /* core */ = {
 			isa = PBXGroup;
 			children = (
-				4566EEF22A669FAA00F8F595 /* PointJSModuleCore.h */,
-				4566EEF62A669FAA00F8F595 /* PointJSModuleCore.m */,
-				4566EEF52A669FAA00F8F595 /* PointJSContainer.h */,
-				4566EEF12A669FAA00F8F595 /* PointJSContainer.m */,
-				4566EEF32A669FAA00F8F595 /* PointJSContainer.swift */,
-				4566EEF42A669FAA00F8F595 /* PointJSManager.h */,
-				4566EEF72A669FAA00F8F595 /* PointJSManager.m */,
-				4566EEF82A669FAA00F8F595 /* PointJSProtocols.h */,
+				4566EEF22A669FAA00F8F595 /* SQBJSModuleCore.h */,
+				4566EEF62A669FAA00F8F595 /* SQBJSModuleCore.m */,
+				4566EEF52A669FAA00F8F595 /* SQBJSContainer.h */,
+				4566EEF12A669FAA00F8F595 /* SQBJSContainer.m */,
+				4566EEF32A669FAA00F8F595 /* SQBJSContainer.swift */,
+				4566EEF42A669FAA00F8F595 /* SQBJSManager.h */,
+				4566EEF72A669FAA00F8F595 /* SQBJSManager.m */,
+				4566EEF82A669FAA00F8F595 /* SQBJSProtocols.h */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -167,12 +167,12 @@
 		4566EEFC2A669FAA00F8F595 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				4566EF002A669FAA00F8F595 /* PointJSCallArgv.h */,
-				4566EEFD2A669FAA00F8F595 /* PointJSCallArgv.m */,
-				4566EEFE2A669FAA00F8F595 /* PointJSResponse.h */,
-				4566EF012A669FAA00F8F595 /* PointJSResponse.m */,
-				4566EF022A669FAA00F8F595 /* PointJSInject.h */,
-				4566EEFF2A669FAA00F8F595 /* PointJSInject.m */,
+				4566EF002A669FAA00F8F595 /* SQBJSCallArgv.h */,
+				4566EEFD2A669FAA00F8F595 /* SQBJSCallArgv.m */,
+				4566EEFE2A669FAA00F8F595 /* SQBJSResponse.h */,
+				4566EF012A669FAA00F8F595 /* SQBJSResponse.m */,
+				4566EF022A669FAA00F8F595 /* SQBJSInject.h */,
+				4566EEFF2A669FAA00F8F595 /* SQBJSInject.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -190,8 +190,8 @@
 			children = (
 				4566EF052A669FAA00F8F595 /* module_system.js */,
 				4566EF062A669FAA00F8F595 /* sync */,
-				4566EF082A669FAA00F8F595 /* PointJSModuleSystem.swift */,
-				453D05C12A68CA0500D76296 /* PointJSModuleLocation.swift */,
+				4566EF082A669FAA00F8F595 /* SQBJSModuleSystem.swift */,
+				453D05C12A68CA0500D76296 /* SQBJSModuleLocation.swift */,
 			);
 			path = system;
 			sourceTree = "<group>";
@@ -199,8 +199,8 @@
 		4566EF062A669FAA00F8F595 /* sync */ = {
 			isa = PBXGroup;
 			children = (
-				4566EF072A669FAA00F8F595 /* PointJSCharacterEnvSync.swift */,
-				453D05C32A68CA6100D76296 /* PointJSCharacterPositionAsync.swift */,
+				4566EF072A669FAA00F8F595 /* SQBJSCharacterEnvSync.swift */,
+				453D05C32A68CA6100D76296 /* SQBJSCharacterPositionAsync.swift */,
 			);
 			path = sync;
 			sourceTree = "<group>";
@@ -333,19 +333,19 @@
 			files = (
 				4566EEDE2A669ED300F8F595 /* ViewController.m in Sources */,
 				4566EED82A669ED300F8F595 /* AppDelegate.m in Sources */,
-				4566EF142A669FAA00F8F595 /* PointJSModuleSystem.swift in Sources */,
-				4566EF112A669FAA00F8F595 /* PointJSResponse.m in Sources */,
-				4566EF092A669FAA00F8F595 /* PointJSContainer.m in Sources */,
+				4566EF142A669FAA00F8F595 /* SQBJSModuleSystem.swift in Sources */,
+				4566EF112A669FAA00F8F595 /* SQBJSResponse.m in Sources */,
+				4566EF092A669FAA00F8F595 /* SQBJSContainer.m in Sources */,
 				4566EEE92A669ED600F8F595 /* main.m in Sources */,
-				4566EF0B2A669FAA00F8F595 /* PointJSModuleCore.m in Sources */,
-				4566EF132A669FAA00F8F595 /* PointJSCharacterEnvSync.swift in Sources */,
-				4566EF0F2A669FAA00F8F595 /* PointJSCallArgv.m in Sources */,
-				4566EF102A669FAA00F8F595 /* PointJSInject.m in Sources */,
-				4566EF0C2A669FAA00F8F595 /* PointJSManager.m in Sources */,
+				4566EF0B2A669FAA00F8F595 /* SQBJSModuleCore.m in Sources */,
+				4566EF132A669FAA00F8F595 /* SQBJSCharacterEnvSync.swift in Sources */,
+				4566EF0F2A669FAA00F8F595 /* SQBJSCallArgv.m in Sources */,
+				4566EF102A669FAA00F8F595 /* SQBJSInject.m in Sources */,
+				4566EF0C2A669FAA00F8F595 /* SQBJSManager.m in Sources */,
 				4566EEDB2A669ED300F8F595 /* SceneDelegate.m in Sources */,
-				453D05C22A68CA0500D76296 /* PointJSModuleLocation.swift in Sources */,
-				4566EF0A2A669FAA00F8F595 /* PointJSContainer.swift in Sources */,
-				453D05C42A68CA6100D76296 /* PointJSCharacterPositionAsync.swift in Sources */,
+				453D05C22A68CA0500D76296 /* SQBJSModuleLocation.swift in Sources */,
+				4566EF0A2A669FAA00F8F595 /* SQBJSContainer.swift in Sources */,
+				453D05C42A68CA6100D76296 /* SQBJSCharacterPositionAsync.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

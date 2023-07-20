@@ -1,23 +1,23 @@
 //
-//  PointJSCharacterEnvSync.swift
-//  Point
+//  SQBJSCharacterEnvSync.swift
+//  SQB
 //
 //  Created by matrixme on 2023/7/18.
 //
 
 import Foundation
 
-class PointJSCharacterEnvSync: NSObject, PointJSCharacterSync {
+class SQBJSCharacterEnvSync: NSObject, SQBJSCharacterSync {
     
     func characterName() -> String! {
         return "env"
     }
     
-    func characterType() -> PointJSCallType {
+    func characterType() -> SQBJSCallType {
         return .sync
     }
     
-    func jsResponse(_ context: QJSContext!, with argv: PointJSCallArgv!) -> PointJSResponse! {
+    func jsResponse(_ context: QJSContext!, with argv: SQBJSCallArgv!) -> SQBJSResponse! {
         let dict = [
             "width": UIScreen.main.bounds.width,
             "height": UIScreen.main.bounds.height

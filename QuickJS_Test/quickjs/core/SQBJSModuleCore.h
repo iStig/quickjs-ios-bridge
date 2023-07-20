@@ -1,6 +1,6 @@
 //
-//  PointJSModuleCore.h
-//  Point
+//  SQBJSModuleCore.h
+//  SQB
 //
 //  Created by matrixme on 2023/7/18.
 //
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PointJSModuleCore : NSObject
+@interface SQBJSModuleCore : NSObject
 
 - (instancetype)init NS_UNAVAILABLE;
 - (instancetype)new NS_UNAVAILABLE;

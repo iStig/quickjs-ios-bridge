@@ -1,13 +1,13 @@
 //
-//  PointJSResponse.m
-//  Point
+//  SQBJSResponse.m
+//  SQB
 //
 //  Created by matrixme on 2023/7/17.
 //
 
-#import "PointJSResponse.h"
+#import "SQBJSResponse.h"
 
-@implementation PointJSResponse
+@implementation SQBJSResponse
 
 - (instancetype)init
 {
@@ -19,14 +19,14 @@
 }
 
 + (instancetype)error:(NSInteger)code :(NSString *)message {
-    PointJSResponse *res = [[PointJSResponse alloc] init];
+    SQBJSResponse *res = [[SQBJSResponse alloc] init];
     res.code = code;
     res.message = message;
     return res;
 }
 
 + (instancetype)ok:(NSObject *)data {
-    PointJSResponse *res = [[PointJSResponse alloc] init];
+    SQBJSResponse *res = [[SQBJSResponse alloc] init];
     res.data = data;
     return res;
 }

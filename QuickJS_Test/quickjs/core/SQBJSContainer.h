@@ -1,6 +1,6 @@
 //
-//  PointJSContainer.h
-//  Point
+//  SQBJSContainer.h
+//  SQB
 //
 //  Created by matrixme on 2023/7/17.
 //
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PointJSContainer : NSObject
+@interface SQBJSContainer : NSObject
 
 @property (nonatomic, strong, readonly) QJSRuntime *runtime;
 @property (nonatomic, strong, readonly) QJSContext *context;

@@ -1,30 +1,30 @@
 //
-//  PointJSContainer.m
-//  Point
+//  SQBJSContainer.m
+//  SQB
 //
 //  Created by matrixme on 2023/7/17.
 //
 
-#import "PointJSContainer.h"
-#import "PointJSModuleCore.h"
-#import "PointJSProtocols.h"
-#import "PointJSManager.h"
-#import "PointJSInject.h"
+#import "SQBJSContainer.h"
+#import "SQBJSModuleCore.h"
+#import "SQBJSProtocols.h"
+#import "SQBJSManager.h"
+#import "SQBJSInject.h"
 
 #import <YYKit/YYKit.h>
 
-@interface PointJSContainer ()
+@interface SQBJSContainer ()
 
-@property (nonatomic, strong) PointJSModuleCore *coreModule;
+@property (nonatomic, strong) SQBJSModuleCore *coreModule;
 
 @end
 
-@implementation PointJSContainer
+@implementation SQBJSContainer
 
 - (instancetype)init {
     self = [super init];
     if (self) {
-        _runtime = PointJSManager.shared.runtime;
+        _runtime = SQBJSManager.shared.runtime;
         _context = [_runtime newContext];
         [self prepareCoreModule];
         [self prepareInjections];
@@ -34,13 +34,13 @@
 
 - (void)prepareCoreModule {
     QJSValue *global = [_context getGlobalValue];
-    _coreModule = [[PointJSModuleCore alloc] initWithRuntime:_runtime andContext:_context];
-    [global setObject:_coreModule forKey:@"PointJSCore"];
+    _coreModule = [[SQBJSModuleCore alloc] initWithRuntime:_runtime andContext:_context];
+    [global setObject:_coreModule forKey:@"SQBJSCore"];
 }
 
 - (void)prepareInjections {
-    NSArray<PointJSInject *> *injections = PointJSManager.shared.injections;
-    for (PointJSInject *inj in injections) {
+    NSArray<SQBJSInject *> *injections = SQBJSManager.shared.injections;
+    for (SQBJSInject *inj in injections) {
         NSError *error2;
         NSURL *jsurl = [NSBundle.mainBundle URLForResource:inj.file withExtension:@"js"];
         NSString *jsstr = [NSString stringWithContentsOfURL:jsurl encoding:NSUTF8StringEncoding error:&error2];

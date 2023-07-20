@@ -1,6 +1,6 @@
 //
-//  PointJSCallArgv.h
-//  Point
+//  SQBJSCallArgv.h
+//  SQB
 //
 //  Created by matrixme on 2023/7/17.
 //
@@ -9,14 +9,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSUInteger, PointJSCallType) {
-    PointJSCallTypeAsync,
-    PointJSCallTypeSync,
+typedef NS_ENUM(NSUInteger, SQBJSCallType) {
+    SQBJSCallTypeAsync,
+    SQBJSCallTypeSync,
 };
 
-@interface PointJSCallArgv : NSObject
+@interface SQBJSCallArgv : NSObject
 
-@property (nonatomic, assign) PointJSCallType type;
+@property (nonatomic, assign) SQBJSCallType type;
 @property (nonatomic, copy) NSString *module;
 @property (nonatomic, copy) NSString *method;
 @property (nonatomic, copy) NSDictionary *params;

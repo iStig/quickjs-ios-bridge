@@ -2,7 +2,7 @@
 
 WOSAI.system = {
     /**
-     * get point runtime env by sync function
+     * get SQB runtime env by sync function
      * @returns {object} object of envs {code, message, data}
      */
     env: () => {

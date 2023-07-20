@@ -1,6 +1,6 @@
 //
-//  PointJSResponse.h
-//  Point
+//  SQBJSResponse.h
+//  SQB
 //
 //  Created by matrixme on 2023/7/17.
 //
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PointJSResponse : NSObject
+@interface SQBJSResponse : NSObject
 
 @property (nonatomic, assign) NSInteger code;
 @property (nonatomic, copy) NSString *message;

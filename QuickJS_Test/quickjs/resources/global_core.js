@@ -1,11 +1,11 @@
 "use strict";
 
-globalThis._call = PointJSCore.call;
-globalThis._callSync = PointJSCore.callSync;
+globalThis._call = SQBJSCore.call;
+globalThis._callSync = SQBJSCore.callSync;
 globalThis._bizCallbacks = {};
 
 /**
- * generate normal native call argv for point
+ * generate normal native call argv for SQB
  * @param {string} module
  * @param {string} method
  * @param {object} params

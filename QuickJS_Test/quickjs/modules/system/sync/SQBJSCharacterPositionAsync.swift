@@ -1,5 +1,5 @@
 //
-//  PointJSCharacterPositionAsync.swift
+//  SQBJSCharacterPositionAsync.swift
 //  QuickJS_Test
 //
 //  Created by zhangjianming on 2023/7/20.
@@ -7,17 +7,17 @@
 
 import Foundation
 
-class PointJSCharacterPositionAsync: NSObject, PointJSCharacterAsync {
+class SQBJSCharacterPositionAsync: NSObject, SQBJSCharacterAsync {
     
     func characterName() -> String! {
         return "position"
     }
     
-    func characterType() -> PointJSCallType {
+    func characterType() -> SQBJSCallType {
         return .async
     }
     
-    //    func jsResponse(_ context: QJSContext!, with argv: PointJSCallArgv!) -> PointJSResponse! {
+    //    func jsResponse(_ context: QJSContext!, with argv: SQBJSCallArgv!) -> SQBJSResponse! {
     //        let dict = [
     //            "latitude": "24.212613",
     //            "longitude": "113.155986"
@@ -25,7 +25,7 @@ class PointJSCharacterPositionAsync: NSObject, PointJSCharacterAsync {
     //        return .ok(dict as NSObject)
     //    }
     
-    func jsResponse(_ context: QJSContext!, with argv: PointJSCallArgv!, callback cb: ((PointJSResponse?) -> Void)!) {
+    func jsResponse(_ context: QJSContext!, with argv: SQBJSCallArgv!, callback cb: ((SQBJSResponse?) -> Void)!) {
         
         let dict = [
             "latitude": "24.212613",

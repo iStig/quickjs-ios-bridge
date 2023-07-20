@@ -8,12 +8,12 @@
     "type": 0,
     "name": "system",
     "file": "module_system",
-    "class": "PointJSModuleSystem"
+    "class": "SQBJSModuleSystem"
   },
   {
     "type": 0,
     "name": "location",
     "file": "module_system",
-    "class": "PointJSModuleLocation"
+    "class": "SQBJSModuleLocation"
   }
 ]
