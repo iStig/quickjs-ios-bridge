@@ -20,13 +20,14 @@
     
     PointJSContainer *jscontainer = [PointJSContainer new];
 //    [jscontainer eval:@"console.log(WOSAI.system.env)"];
-    [jscontainer eval:@"let result = WOSAI.system.env(); console.log(JSON.stringify(result))"];
+    [jscontainer eval:@"let result = WOSAI.system.env(console.log('******')); console.log('>>>>'+JSON.stringify(result))"];
     
-    [jscontainer eval:@"let result = WOSAI.system.env(); console.log(JSON.stringify(result))"];
+//    [jscontainer eval:@"WOSAI.location.position((param) => {console.log(param)});"];
     
+    [jscontainer eval:@"WOSAI.location.position(function(param){console.log('>>>>'+JSON.stringify(param));});"];//console.log(param);
+
     
-    
-    
+
 //    {
 //        Class class = NSClassFromString(@"QuickJS_Test.PointJSModuleSystem");
 //        NSLog(@"%@",class);

@@ -9,5 +9,11 @@
     "name": "system",
     "file": "module_system",
     "class": "PointJSModuleSystem"
+  },
+  {
+    "type": 0,
+    "name": "location",
+    "file": "module_system",
+    "class": "PointJSModuleLocation"
   }
 ]
