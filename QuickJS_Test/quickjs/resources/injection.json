@@ -5,6 +5,12 @@
     "file": "global_core"
   },
   {
+      "type": 0,
+      "name": "web",
+      "file": "web_system",
+      "class": "SQBJSModuleWeb"
+  },
+  {
     "type": 0,
     "name": "system",
     "file": "module_system",

@@ -10,15 +10,15 @@ globalThis._bizCallbacks = {};
  * @param {string} method
  * @param {object} params
  * @param {boolean} sync
- * @param {int} callbackId
+ * @param {function} callback
  * @returns {object}
  */
 globalThis._genCallArgv = (module, method, params = null, sync = false, callback) => {
     let callback_id = 0;
-//    console.log('>>>11111');
+    console.log('>>>11111');
 
     if(callback !== undefined){
-//        console.log('>>>2222');
+        console.log('>>>2222');
 
 //        console.log(callback);
         callback_id = globalThis._persistCallback(callback);
@@ -56,7 +56,7 @@ globalThis._persistCallback = (callback) => {
  * @returns
  */
 globalThis._nativeCallback = (callback_id, params) => {
-//    console.log('8888');
+    console.log('8888');
 
 //    console.log('8888'+callback_id);
 //    console.log('**'+params);

@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		453D05C22A68CA0500D76296 /* SQBJSModuleLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453D05C12A68CA0500D76296 /* SQBJSModuleLocation.swift */; };
-		453D05C42A68CA6100D76296 /* SQBJSCharacterPositionAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453D05C32A68CA6100D76296 /* SQBJSCharacterPositionAsync.swift */; };
+		454C75462A774EED009F8781 /* SQBJSCharacterPositionAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454C75452A774EED009F8781 /* SQBJSCharacterPositionAsync.swift */; };
+		454C75482A775D9A009F8781 /* web_system.js in Resources */ = {isa = PBXBuildFile; fileRef = 454C75472A775D99009F8781 /* web_system.js */; };
+		454C754A2A775F13009F8781 /* SQBJSModuleWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454C75492A775F13009F8781 /* SQBJSModuleWeb.swift */; };
+		454C754C2A775F69009F8781 /* SQBJSCharacterWebSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454C754B2A775F69009F8781 /* SQBJSCharacterWebSync.swift */; };
+		454C754E2A775F78009F8781 /* SQBJSCharacterWebAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454C754D2A775F78009F8781 /* SQBJSCharacterWebAsync.swift */; };
 		4566EED82A669ED300F8F595 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566EED72A669ED300F8F595 /* AppDelegate.m */; };
 		4566EEDB2A669ED300F8F595 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566EEDA2A669ED300F8F595 /* SceneDelegate.m */; };
 		4566EEDE2A669ED300F8F595 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4566EEDD2A669ED300F8F595 /* ViewController.m */; };
@@ -34,7 +38,11 @@
 /* Begin PBXFileReference section */
 		1EC718364251BB9ADAEA5D59 /* Pods-QuickJS_Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickJS_Test.debug.xcconfig"; path = "Target Support Files/Pods-QuickJS_Test/Pods-QuickJS_Test.debug.xcconfig"; sourceTree = "<group>"; };
 		453D05C12A68CA0500D76296 /* SQBJSModuleLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQBJSModuleLocation.swift; sourceTree = "<group>"; };
-		453D05C32A68CA6100D76296 /* SQBJSCharacterPositionAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQBJSCharacterPositionAsync.swift; sourceTree = "<group>"; };
+		454C75452A774EED009F8781 /* SQBJSCharacterPositionAsync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQBJSCharacterPositionAsync.swift; sourceTree = "<group>"; };
+		454C75472A775D99009F8781 /* web_system.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = web_system.js; sourceTree = "<group>"; };
+		454C75492A775F13009F8781 /* SQBJSModuleWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQBJSModuleWeb.swift; sourceTree = "<group>"; };
+		454C754B2A775F69009F8781 /* SQBJSCharacterWebSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQBJSCharacterWebSync.swift; sourceTree = "<group>"; };
+		454C754D2A775F78009F8781 /* SQBJSCharacterWebAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQBJSCharacterWebAsync.swift; sourceTree = "<group>"; };
 		4566EED32A669ED300F8F595 /* QuickJS_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickJS_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4566EED62A669ED300F8F595 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4566EED72A669ED300F8F595 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -89,6 +97,15 @@
 				961C61921E0FA813D2ED9F0D /* Pods_QuickJS_Test.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		454C75442A774EED009F8781 /* async */ = {
+			isa = PBXGroup;
+			children = (
+				454C75452A774EED009F8781 /* SQBJSCharacterPositionAsync.swift */,
+				454C754D2A775F78009F8781 /* SQBJSCharacterWebAsync.swift */,
+			);
+			path = async;
 			sourceTree = "<group>";
 		};
 		4566EECA2A669ED300F8F595 = {
@@ -160,6 +177,7 @@
 			children = (
 				4566EEFA2A669FAA00F8F595 /* injection.json */,
 				4566EEFB2A669FAA00F8F595 /* global_core.js */,
+				454C75472A775D99009F8781 /* web_system.js */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -189,9 +207,11 @@
 			isa = PBXGroup;
 			children = (
 				4566EF052A669FAA00F8F595 /* module_system.js */,
-				4566EF062A669FAA00F8F595 /* sync */,
 				4566EF082A669FAA00F8F595 /* SQBJSModuleSystem.swift */,
 				453D05C12A68CA0500D76296 /* SQBJSModuleLocation.swift */,
+				454C75492A775F13009F8781 /* SQBJSModuleWeb.swift */,
+				4566EF062A669FAA00F8F595 /* sync */,
+				454C75442A774EED009F8781 /* async */,
 			);
 			path = system;
 			sourceTree = "<group>";
@@ -200,7 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				4566EF072A669FAA00F8F595 /* SQBJSCharacterEnvSync.swift */,
-				453D05C32A68CA6100D76296 /* SQBJSCharacterPositionAsync.swift */,
+				454C754B2A775F69009F8781 /* SQBJSCharacterWebSync.swift */,
 			);
 			path = sync;
 			sourceTree = "<group>";
@@ -279,6 +299,7 @@
 				4566EF122A669FAA00F8F595 /* module_system.js in Resources */,
 				4566EEE32A669ED600F8F595 /* Assets.xcassets in Resources */,
 				4566EEE12A669ED300F8F595 /* Main.storyboard in Resources */,
+				454C75482A775D9A009F8781 /* web_system.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,10 +355,13 @@
 				4566EEDE2A669ED300F8F595 /* ViewController.m in Sources */,
 				4566EED82A669ED300F8F595 /* AppDelegate.m in Sources */,
 				4566EF142A669FAA00F8F595 /* SQBJSModuleSystem.swift in Sources */,
+				454C754C2A775F69009F8781 /* SQBJSCharacterWebSync.swift in Sources */,
 				4566EF112A669FAA00F8F595 /* SQBJSResponse.m in Sources */,
 				4566EF092A669FAA00F8F595 /* SQBJSContainer.m in Sources */,
 				4566EEE92A669ED600F8F595 /* main.m in Sources */,
+				454C754A2A775F13009F8781 /* SQBJSModuleWeb.swift in Sources */,
 				4566EF0B2A669FAA00F8F595 /* SQBJSModuleCore.m in Sources */,
+				454C75462A774EED009F8781 /* SQBJSCharacterPositionAsync.swift in Sources */,
 				4566EF132A669FAA00F8F595 /* SQBJSCharacterEnvSync.swift in Sources */,
 				4566EF0F2A669FAA00F8F595 /* SQBJSCallArgv.m in Sources */,
 				4566EF102A669FAA00F8F595 /* SQBJSInject.m in Sources */,
@@ -345,7 +369,7 @@
 				4566EEDB2A669ED300F8F595 /* SceneDelegate.m in Sources */,
 				453D05C22A68CA0500D76296 /* SQBJSModuleLocation.swift in Sources */,
 				4566EF0A2A669FAA00F8F595 /* SQBJSContainer.swift in Sources */,
-				453D05C42A68CA6100D76296 /* SQBJSCharacterPositionAsync.swift in Sources */,
+				454C754E2A775F78009F8781 /* SQBJSCharacterWebAsync.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +504,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zhangjianming/Desktop/quickjs/QuickJS_Test/QuickJS_Test/QuickJS_Test-Bridging-Header.h";
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 5.0;
