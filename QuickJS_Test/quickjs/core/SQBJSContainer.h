@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <QuickJS_iOS.h>
+#import <libQuickJS_iOS/QuickJS_iOS.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import "SQBJSCallArgv.h"
 #import "SQBJSResponse.h"
-#import <QuickJS_iOS.h>
+#import <libQuickJS_iOS/QuickJS_iOS.h>
 
 #ifndef SQBJSProtocols_h
 #define SQBJSProtocols_h

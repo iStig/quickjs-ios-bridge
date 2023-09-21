@@ -10,7 +10,7 @@
 #import "SQBJSResponse.h"
 #import "SQBJSManager.h"
 #import "SQBJSProtocols.h"
-#import <YYKit.h>
+#import <YYKit/YYKit.h>
 
 @implementation SQBJSModuleCore
 
