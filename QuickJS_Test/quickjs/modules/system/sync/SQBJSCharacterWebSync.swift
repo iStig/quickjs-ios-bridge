@@ -22,6 +22,7 @@ class SQBJSCharacterWebSync: NSObject, SQBJSCharacterSync {
             "width": UIScreen.main.bounds.width,
             "height": UIScreen.main.bounds.height
         ]
+        print("***nativelog***SQBJSCharacterWebSync_main",dict);
         return .ok(dict as NSObject)
     }
 }

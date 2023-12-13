@@ -16,10 +16,10 @@ typedef NS_ENUM(NSUInteger, SQBJSInjectType) {
 
 @interface SQBJSInject : NSObject
 
-@property (nonatomic, copy) NSString *name;
-@property (nonatomic, copy) NSString *file;
-@property (nonatomic, assign) SQBJSInjectType type;
-@property (nonatomic, copy) NSString *class;
+@property (nonatomic, copy) NSString *name;//模块名
+@property (nonatomic, copy) NSString *file;//模块文件名（模块代码）
+@property (nonatomic, assign) SQBJSInjectType type;//模块类型
+@property (nonatomic, copy) NSString *class;//模块类
 
 @end
 

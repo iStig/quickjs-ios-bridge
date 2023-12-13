@@ -32,20 +32,13 @@ class SQBJSCharacterPositionAsync: NSObject, SQBJSCharacterAsync {
             "longitude": "113.155986"
         ]
         
-        
         let delayTime = DispatchTime.now() + DispatchTimeInterval.seconds(3)
         DispatchQueue.global().asyncAfter(deadline: delayTime) {
-//            print(dict,argv,context);
-//            print("aaa");
+            print("***nativelog***SQBJSCharacterPositionAsync_asyncAfter",dict);
             DispatchQueue.main.sync {//主线程
-                print("aaa");
+                print("***nativelog***SQBJSCharacterPositionAsync_main.sync",dict);
                 cb(.ok(dict as NSObject));
             }
         }
-        
-//        print("bbb");
-//        sleep(3);
-//        print("aaa111");
-//        cb(.ok(dict as NSObject));
     }
 }

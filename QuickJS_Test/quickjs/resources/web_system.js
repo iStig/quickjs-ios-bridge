@@ -21,30 +21,29 @@ WOSAI.web = {
     //},
 
     callSync(param) {
-        console.log('2222' + JSON.stringify(param));
+        console.log('>>>WOSAI.web.callSync: ' + JSON.stringify(param));
         const params = _genCallArgv("web", "callSync", param, true);
-        console.log('3333' + JSON.stringify(params));
+        console.log('>>>WOSAI.web.callSync_genCallArgv: ' + JSON.stringify(params));
         const res = _callSync(JSON.stringify(params));
-        console.log('4444' + JSON.parse(res));
+        console.log('>>>WOSAI.web.callSync_callSync: ' + JSON.stringify(params));
         return JSON.parse(res);
     },
 
     callAsync: (callback) => {
+        console.log('>>>WOSAI.web.callAsync: ' + callback);
         let params = _genCallArgv("web", "callAsync", { module: 'aaa', method: 'bbb', params: { cccc: 'dddd' } }, false, callback);//生成参数
-        console.log('3333' + params);
-        //        console.log('4444'+ JSON.stringify(params));
+        console.log('>>>WOSAI.web.callAsync_genCallArgv: ' + JSON.stringify(param));
         let res = _call(JSON.stringify(params));
-        //        console.log('5555'+ JSON.stringify(res));
-        //        console.log('6666'+ res);
+        console.log('>>>WOSAI.web.callAsync_call: ' + callback);
         callback(JSON.parse(res));
     },
     
     callAsync: (param, callback) => {
-        console.log('2222' + JSON.stringify(param));
+        console.log('>>>WOSAI.web.callAsyncWithParam: ' + callback);
         let params = _genCallArgv("web", "callAsync", param, false, callback);//生成参数
-        console.log('3333' + JSON.stringify(params));
+        console.log('>>>WOSAI.web.callAsyncWithParam_genCallArgv: ' + JSON.stringify(param));
         let res = _call(JSON.stringify(params));
-        console.log('4444' + JSON.parse(res));
+        console.log('>>>WOSAI.web.callAsyncWithParam_call: ' + res);
         callback(JSON.parse(res));
     }
 };

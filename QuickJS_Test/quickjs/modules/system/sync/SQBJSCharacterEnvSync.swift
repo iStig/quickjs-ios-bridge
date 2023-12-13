@@ -22,6 +22,7 @@ class SQBJSCharacterEnvSync: NSObject, SQBJSCharacterSync {
             "width": UIScreen.main.bounds.width,
             "height": UIScreen.main.bounds.height
         ]
+        print("***nativelog***SQBJSCharacterEnvSync_main",dict);
         return .ok(dict as NSObject)
     }
 }

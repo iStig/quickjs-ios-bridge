@@ -19,24 +19,39 @@
     // Do any additional setup after loading the view.
     
     self.jscontainer = [SQBJSContainer new];
-//    [jscontainer eval:@"console.log(WOSAI.system.env)"];
-    
+//    [self.jscontainer eval:@"console.log('<<<'+WOSAI.system.env)"];//打印js方法
+//    [self.jscontainer eval:@"console.log('<<<'+WOSAI.system.env())"];//打印js方法回调信息结果
+    [self.jscontainer eval:@"console.log('<<<'+JSON.stringify(WOSAI.system.env()))"];//打印js方法回调信息并且字符串化结果
     
     //同步
-//    [jscontainer eval:@"let result = WOSAI.system.env(console.log('******')); console.log('<<<'+JSON.stringify(result))"];
+//    [self.jscontainer eval:@"let result = WOSAI.system.env(console.log('<<<WOSAI.system.env_result'));console.log('<<<hello');"];
+    
+    
     //异步
-//    [jscontainer eval:@"WOSAI.location.position((param) => {console.log('>>>><<<<'+JSON.stringify(param));});"];
-    //异步另外一种写法
+ //   [self.jscontainer eval:@"WOSAI.location.position((param) => {console.log('<<<'+JSON.stringify(param));});"];
+  //  异步另外一种写法
 //    [self.jscontainer eval:@"WOSAI.location.position(function(param){console.log('>>>>'+JSON.stringify(param));});"];
 
    //暂时没用
 //    [self.jscontainer eval:@"WOSAI.web.callSync(function(param){console.log('>>>>'+JSON.stringify(param));});"];
 
+    
+    
+    
     //同步
-//      [self.jscontainer eval:@"let result =WOSAI.web.callSync({module:'aaa',method:'bbb',params:{cccc:'dddd'}});console.log('<<<'+JSON.stringify(result))"];
+  //  [self.jscontainer eval:@"let result =WOSAI.web.callSync({module:'aaa',method:'bbb',params:{cccc:'dddd'}});console.log('<<<'+JSON.stringify(result))"];
 
-    //异步
-    [self.jscontainer eval:@"WOSAI.web.callAsync({module:'aaa',method:'bbb',params:{cccc:'dddd'}},(param) => {console.log('>>>><<<<'+JSON.stringify(param));});"];
+    
+    
+    
+    
+    
+    
+    
+    
+    //
+//    //异步
+//    [self.jscontainer eval:@"WOSAI.web.callAsync({module:'aaa',method:'bbb',params:{cccc:'dddd'}},(param) => {console.log('>>>><<<<'+JSON.stringify(param));});"];
 
     
     

@@ -47,12 +47,12 @@
         if (error2) {
             continue;
         }
-        [self.context eval:jsstr];
+        [_context eval:jsstr];
     }
 }
 
 - (QJSValue *)eval:(NSString *)script {
-    return [_context eval:script];;
+    return [self.context eval:script];;
 }
 
 - (QJSValue *)eval:(NSString *)script :(NSDictionary *)params {

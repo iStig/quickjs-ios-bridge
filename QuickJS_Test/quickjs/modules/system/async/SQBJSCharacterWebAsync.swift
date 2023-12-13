@@ -27,17 +27,11 @@ class SQBJSCharacterWebAsync: NSObject, SQBJSCharacterAsync {
         
         let delayTime = DispatchTime.now() + DispatchTimeInterval.seconds(3)
         DispatchQueue.global().asyncAfter(deadline: delayTime) {
-//            print(dict,argv,context);
-//            print("aaa");
+            print("***nativelog***SQBJSCharacterWebAsync_asyncAfter",dict);
             DispatchQueue.main.sync {//主线程
-                print("aaa");
+                print("***nativelog***SQBJSCharacterWebAsync_main.sync",dict);
                 cb(.ok(dict as NSObject));
             }
         }
-        
-//        print("bbb");
-//        sleep(3);
-//        print("aaa111");
-//        cb(.ok(dict as NSObject));
     }
 }

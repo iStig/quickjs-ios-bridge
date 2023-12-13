@@ -15,15 +15,11 @@ globalThis._bizCallbacks = {};
  */
 globalThis._genCallArgv = (module, method, params = null, sync = false, callback) => {
     let callback_id = 0;
-    console.log('>>>11111');
-
+    console.log('>>>_genCallArgv_module: '+module+' method: '+method+' params: '+JSON.stringify(params)+' callback: '+callback);
     if(callback !== undefined){
-        console.log('>>>2222');
-
-//        console.log(callback);
+        console.log('>>>_genCallArgv_callback');
         callback_id = globalThis._persistCallback(callback);
-//        console.log('>>>33333');
-
+        console.log('>>>_genCallArgv_callback_id: '+ callback_id);
     }
     return {
     type: sync ? 1 : 0,
@@ -40,12 +36,11 @@ globalThis._genCallArgv = (module, method, params = null, sync = false, callback
  * @returns {int}
  */
 globalThis._persistCallback = (callback) => {
-//    console.log('49500');
-
+    console.log('>>>_persistCallback');
   let callback_id = Date.now();
-//  console.log(callback_id);
+    console.log('>>>_persistCallback_callback_id: '+callback_id);
   globalThis._bizCallbacks[callback_id] = callback;
-//  console.log(globalThis._bizCallbacks);
+  console.log('>>>_persistCallback_globalThis._bizCallbacks: ' + JSON.stringify(globalThis._bizCallbacks));
   return callback_id;
 };
 
@@ -56,21 +51,14 @@ globalThis._persistCallback = (callback) => {
  * @returns
  */
 globalThis._nativeCallback = (callback_id, params) => {
-    console.log('8888');
-
-//    console.log('8888'+callback_id);
-//    console.log('**'+params);
-
+    console.log('>>>_nativeCallback_callback_id: ' + callback_id + 'params: '+ JSON.stringify(params));
   let callback = globalThis._bizCallbacks[callback_id];
-//    console.log('7777'+callback);
-//    console.log('1111'+params);
+    console.log('>>>_nativeCallback_callback' + callback);
   if (callback === undefined && typeof callback !== "function") {
-    return;
+      console.log('>>>_nativeCallback_callback_undefined && callback_not_function');
+     return;
   }
-  console.log('1111**'+JSON.stringify(params));
-//  let obj = JSON.parse(params);
-//  console.log('4424455**'+obj);
-
+    console.log('>>>_nativeCallback_callback_excute');
   callback(params);
 };
 

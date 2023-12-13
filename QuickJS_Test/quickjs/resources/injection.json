@@ -1,25 +1,25 @@
 [
-  {
-    "type": 1,
-    "name": "global",
-    "file": "global_core"
-  },
-  {
-      "type": 0,
-      "name": "web",
-      "file": "web_system",
-      "class": "SQBJSModuleWeb"
-  },
-  {
-    "type": 0,
-    "name": "system",
-    "file": "module_system",
-    "class": "SQBJSModuleSystem"
-  },
-  {
-    "type": 0,
-    "name": "location",
-    "file": "module_system",
-    "class": "SQBJSModuleLocation"
-  }
+    {
+        "type": 1,
+        "name": "global",
+        "file": "global_core"
+    },
+    {
+        "type": 0,
+        "name": "web",
+        "file": "web_system",
+        "class": "SQBJSModuleWeb"
+    },
+    {
+        "type": 0,
+        "name": "system",
+        "file": "module_system",
+        "class": "SQBJSModuleSystem"
+    },
+    {
+        "type": 0,
+        "name": "location",
+        "file": "module_system",
+        "class": "SQBJSModuleLocation"
+    }
 ]
