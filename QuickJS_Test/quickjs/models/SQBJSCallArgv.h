@@ -9,9 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSUInteger, SQBJSCallType) {
-    SQBJSCallTypeAsync,
-    SQBJSCallTypeSync,
+typedef NS_ENUM(NSUInteger, SQBJSCallType) {//默认异步
+    SQBJSCallTypeAsync,//异步 = 0
+    SQBJSCallTypeSync,//同步 = 1
 };
 
 @interface SQBJSCallArgv : NSObject

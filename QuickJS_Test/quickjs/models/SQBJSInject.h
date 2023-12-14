@@ -9,9 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSUInteger, SQBJSInjectType) {
-    SQBJSInjectTypeModule,
-    SQBJSInjectTypeGlobal,
+typedef NS_ENUM(NSUInteger, SQBJSInjectType) {//默认模块级别
+    SQBJSInjectTypeModule,// 模块 = 0
+    SQBJSInjectTypeGlobal,// 全局 = 1
 };
 
 @interface SQBJSInject : NSObject
