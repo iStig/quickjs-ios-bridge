@@ -11,7 +11,7 @@ WOSAI.system = {
     let params = _genCallArgv("system", "env", null, true);
     console.log(">>>WOSAI.system.env_genCallArgv: " + JSON.stringify(params));
     let res = _callSync(JSON.stringify(params));
-    console.log(">>>WOSAI.system.env_callSync: " + res);
+    console.log(">>>WOSAI.system.env_callSync: " + JSON.stringify(res));
     return JSON.parse(res);
   },
 };
@@ -21,9 +21,9 @@ WOSAI.location = {
   position: (param, callback)  => {
     console.log(">>>WOSAI.location.position: " + callback);
     let params = _genCallArgv("location","position",param,false,callback); //生成参数
-    console.log(">>>WOSAI.location.position_genCallArgv: " + JSON.stringify(param));
+    console.log(">>>WOSAI.location.position_genCallArgv: " + JSON.stringify(params));
     let res = _call(JSON.stringify(params));
-    console.log(">>>WOSAI.location.position_call: " + res);
+    console.log(">>>WOSAI.location.position_call: " + JSON.stringify(res));
     callback(JSON.parse(res));
   },
 };
