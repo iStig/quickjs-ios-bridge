@@ -28,9 +28,9 @@
 
 - (void)action4 { //同步&无入参&无回调 //很奇怪 用let result 来接受返回内容 调用过一次就不行咯
     NSLog(@"%@",NSStringFromSelector(_cmd));
-//    [self.jscontainer eval:@"let result = WOSAI.system.env();"];
-    [self.jscontainer eval:@"console.log('>>>>' + WOSAI.system.env())"];
-//    [self.jscontainer eval:@"let result = WOSAI.system.env(); console.log('>>>>' + JSON.stringify(result));"];
+//    [self.jscontainer eval:@"let result = WOSAI.system.env();"];//只能执行一次
+    [self.jscontainer eval:@"console.log('>>>>' + WOSAI.system.env())"];//可执行多次
+//    [self.jscontainer eval:@"let result = WOSAI.system.env(); console.log('>>>>' + JSON.stringify(result));"];//只能执行一次
 }
 
 - (void)action5 { //异步&有入参&有回调&2种写法
